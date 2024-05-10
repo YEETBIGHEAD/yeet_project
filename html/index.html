@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Yeet">
+	<meta name="description" content="노무사">
+	<meta name="keywords" content="YEET, yeet, 노무사">
+    <title>Yeet Project</title>
+    <link rel="stylesheet" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/common.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/front.js"></script>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <div class="img"><img src="/images/logo_white.png" alt="logo"></div>
+                <span>이트 노무사무소</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">업무영역</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="visualBanner">
+            <div class="video-wrap">
+                <video class="video"  height="700" autoplay loop muted>
+                    <source src="/images/visualBanner.mp4" type="video/webm" />
+                </video>
+            </div>
+            <div class="desc">
+                <h2>노무전문관리 전문가 그룹 <br><strong>이트 YEET</strong></h2>
+            </div>
+        </section>
+        <section class="intro">
+            <h2>높은 완성도와 차별화된 상담</h2>
+            <p>각 전문가들의 확실한 분업과 조화를 자부합니다.</p>
+            <a href="#">상담하기</a>
+        </section>
+    </main>
+    <style>
+        .header{width:100%; height:90px; position:fixed; top:0; left: 0; background-color: transparent;z-index: 10;}
+        .header .header-wrap{padding:20px 50px; width:1210px; margin:0 auto; display: flex; align-items: center; justify-content: space-between; color:#fff;}
+        .header .logo {display: flex; align-items: center;}
+        .header .logo .img{height:50px;}
+        .header .logo .img img{width:auto; height: 100%;}
+        .header .logo span{display: block; margin-left:10px; font-size:20px; font-weight: bold;}
+        .header nav ul{display: flex;}
+        .header nav ul li{padding:0 20px; font-size:15px;}
+
+        .visualBanner{width:100%; height:700px; overflow: hidden; position:relative; z-index: 1;}
+        .visualBanner .video-wrap {width:100%; height:100%;position:relative;}
+        .visualBanner .video-wrap::after{content: ''; z-index: 2; position: absolute;top:0;left:0;display: block; width: 100%; height: 100%; background:rgba(0,0,0,0.3);}
+        .visualBanner .video-wrap .video{width:100%; height:700px; object-fit: cover;}
+        .visualBanner .desc{ position: absolute; z-index: 3; top:50%; left:50%; transform: translate(-50%, -50%); color:#fff; text-align: center;}
+        .visualBanner .desc h2{font-size:36px; font-weight: normal;}
+        .visualBanner .desc h2 strong{font-weight: bold;}
+        .visualBanner .desc{  display: inline-block;padding: 10px;animation: fadeinOut 3s;animation-iteration-count: infinite;}
+
+        .intro{padding:100px 0; text-align: center; background-color: #fff;}
+        .intro h2{font-size:36px; color:#111; font-weight: bold;}
+        .intro p{font-size:15px; color:#767676; font-weight: normal; margin-top:20px;}
+        .intro a{margin-top:30px; display: inline-block; width:250px; height:44px; line-height:44px; color:#fff; background:#111;font-size:18px; font-weight: normal;}
+
+        .footer{position:fixed; bottom:0; left: 0; width:100%; padding:20px; background-color: #fff; color:#767676; font-size:13px;}
+        .footer-wrap{width:1210px; margin:0 auto; display: flex; justify-content: space-between;}
+        .footer-wrap .name { font-size: 15px;}
+        .footer-wrap ul li{margin-top:5px;}
+        @keyframes fadeinOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+    </style>
+    <script>
+        $(document).ready(function(){
+        //     var swiper = new Swiper(".mySwiper", {
+        //     spaceBetween: 30,
+        //     centeredSlides: true,
+        //     autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //     },
+        //     pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //     },
+        //     navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //     },
+        // });
+        })
+    </script>
+
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="name"><strong>이트 노무사무소</strong></div>
+            <div>
+                <ul>
+                    <li>대표 노무사 : 오창용 |</li>
+                    <li>대표전화 : 032. 327. 7879 |</li>
+                    <li>FAX : 032. 327. 7870 </li>
+                    <li>E-mail :<a href="#">yeet@naver.com</a><br></li>
+                    <li> 경기도 부천시 원미구 소향로143 필레오트윈파크 1동 212호 (구. 경기도 부천시 원미구 중동 1160-2 필레오파크 1동 212호)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
